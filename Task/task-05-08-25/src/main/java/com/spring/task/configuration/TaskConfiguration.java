@@ -1,5 +1,6 @@
 package com.spring.task.configuration;
 
+import com.spring.task.dto.TaskDto;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -133,4 +134,15 @@ public class TaskConfiguration {
         map.put("Key",Boolean.FALSE);
         return map;
     }
+
+    @Bean("getListofName")
+    public List<TaskDto> getListofName(){
+        List<TaskDto> dtos = new ArrayList<>();
+        dtos.add(new TaskDto("Tejaswa D",7899455818L));
+        dtos.add(new TaskDto("Sm",7899455819L));
+        return dtos;
+
+    }
+
+
 }

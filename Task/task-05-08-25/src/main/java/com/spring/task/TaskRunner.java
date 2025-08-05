@@ -1,9 +1,12 @@
 package com.spring.task;
 
 import com.spring.task.configuration.TaskConfiguration;
+
+import com.spring.task.dto.TaskDto;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Set;
@@ -42,6 +45,23 @@ public class TaskRunner {
         System.out.println("Task-14\n"+applicationContext.getBean("hashMap4", HashMap.class));
 
         System.out.println("Task-15\n"+applicationContext.getBean("hashMap5", HashMap.class));
+
+        TaskDto dto = applicationContext.getBean(TaskDto.class);
+        dto.setName("Tejaswa");
+        dto.setNumber(7899455818L);
+        System.out.println("Task-16\n"+dto);
+
+        List<TaskDto> dtos= applicationContext.getBean("getListofName",List.class);
+
+        System.out.println("Task-17\n");
+        dtos.stream().forEach(System.out::println);
+
+
+
+
+
+
+
     }
 
 }
