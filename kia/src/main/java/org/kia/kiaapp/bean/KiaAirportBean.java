@@ -1,14 +1,29 @@
 package org.kia.kiaapp.bean;
 
+import jdk.nashorn.internal.ir.Terminal;
+import org.kia.kiaapp.AirportTerminal;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 import java.util.Objects;
 
-
+@Component
 public class KiaAirportBean {
     private String airportName;
     private String airportAddress;
-    private int airportTerminals;
+    @Autowired
+    private AirportTerminal airportTerminals;
+
+    @Autowired
+    public KiaAirportBean(@Value("Rajeev Gandhi Int Airport") String airportName, @Value("Hyderabad") String airportAddress , AirportTerminal airportTerminals){
+        System.out.println("KiaAirport COnstructor is invoked");
+
+        this.airportName = airportName;
+        this.airportAddress = airportAddress;
+        this.airportTerminals = airportTerminals;
+        System.out.println(airportName+"\n"+airportAddress+"\n"+airportTerminals);
+    }
 
     public void setAirportName(String airportName){
         this.airportName = airportName;
@@ -18,7 +33,7 @@ public class KiaAirportBean {
         this.airportAddress = airportAddress;
     }
 
-    public void setAirportTerminals(int airportTerminals){
+    public void setAirportTerminals(AirportTerminal airportTerminals){
         this.airportTerminals = airportTerminals;
     }
 
@@ -30,9 +45,9 @@ public class KiaAirportBean {
         return airportAddress;
     }
 
-    public int getAirportTerminals(){
-        return airportTerminals;
-    }
+//    public AirportTerminal getAirportTerminals(){
+//        return airportTerminals;
+//    }
 
 
     @Override

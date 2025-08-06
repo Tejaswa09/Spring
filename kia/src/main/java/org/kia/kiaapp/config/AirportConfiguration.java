@@ -12,11 +12,7 @@ import java.util.List;
 @ComponentScan(basePackages = "org.kia.kiaapp")
 public class AirportConfiguration {
 
-    @Bean
-    public Object getAirportBean(){
-        System.out.println("Inside getAiportBean()");
-     return new KiaAirportBean();
-    }
+
     @Bean
     public List<String> getCountries(){
         List<String> countries = new ArrayList<>();

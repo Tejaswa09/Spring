@@ -4,12 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bab905f0-4094-4e9f-9ba7-e3edc943068f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/spring/task/dto/TaskDto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/task/TaskRunner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/task/TaskRunner.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/spring/task/configuration/TaskConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/spring/task/configuration/TaskConfiguration.java" afterDir="false" />
-    </list>
+    <list default="true" id="bab905f0-4094-4e9f-9ba7-e3edc943068f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
